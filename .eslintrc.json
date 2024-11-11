@@ -3,7 +3,8 @@
   "rules": {
     "react/no-unescaped-entities": "off",
     "@next/next/no-page-custom-font": "off",
-    "@typescript-eslint/no-unused-vars": "off",  // or "off" to completely disable
-    "prefer-const": "off"  // or "off" to disable the rule
+    "@typescript-eslint/no-unused-vars": "warn",
+    "prefer-const": "warn",
+    "@typescript-eslint/no-non-null-asserted-optional-chain": "off"
   }
 }
