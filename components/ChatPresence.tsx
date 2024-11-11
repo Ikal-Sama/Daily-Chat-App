@@ -17,7 +17,7 @@ export default function ChatPresence() {
         console.log("Synced presence state: ", channel.presenceState());
         const userIds = [];
         for (const id in channel.presenceState()) {
-          //@ts-expect-error
+          //@ts-expect-error: no presence state found for this channel
           userIds.push(channel.presenceState()[id][0].user_id);
         }
 
