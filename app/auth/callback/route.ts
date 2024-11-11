@@ -25,10 +25,7 @@ export async function GET(request: Request) {
         return NextResponse.redirect(`${origin}${next}`)
       }
     }
-    if(error) {
-      console.log("Error:", error.message);
-      
-    }
+  
   }
   
 
